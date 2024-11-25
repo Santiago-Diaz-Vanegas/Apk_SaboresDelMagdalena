@@ -1,0 +1,159 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sabores del Magdalena"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Un rincón culinario en el corazón de Barrancabermeja, donde la tradición y la innovación se unen para celebrar la rica herencia gastronómica del río Magdalena. Nuestro restaurante se especializa en platillos de río, ofreciendo una experiencia única que resalta los sabores auténticos de la región."
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categorías"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Primera fila de tarjetas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Tarjeta Entrada -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="8dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/entrada01"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/entrada01"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrada"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tarjeta Pescado -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="8dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/pescado01"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/pescado01"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pescado"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Segunda fila de tarjetas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Tarjeta Cazuelas -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="8dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/cazuelas01"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/cazuelas01"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cazuelas"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Tarjeta Filetes -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="8dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/filetes01"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/filetes01"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Filetes"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
